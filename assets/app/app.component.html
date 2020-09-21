@@ -1,0 +1,20 @@
+<ng-container *ngIf="dataToSubsidiaries">
+	<div *ngIf="!dataToSubsidiaries.content.length; else list" class="height-100 width-100 column2 center middle no-float">
+	  <h1 class="title-provider title-small deep-sea-green bold column2 center m-bottom-9">
+		Crear sucursales
+	  </h1>
+	  <div class="description-container m-bottom-13">
+		<p class="description-text text-big deep-sea-green text-center">
+		  Comienza creando las sucursales actuales y activas en tu empresa. La
+		  información que se solicita es de carácter
+		  <span class="description-text text-big deep-sea-green bold">*obligatorio</span>
+		  para la correcta creación. Haz clic en Crear sucursal para comenzar.
+		</p>
+	  </div>
+	  <a class="button-primary link-simple" href="/subsidiary/create">Crear sucursal</a>
+	</div>
+	<ng-template #list>
+	  <h1 class="poppins deep-sea-green bold text-normal m-bottom-10">Sucursales</h1>
+	  <subsidiaries-list [dataToSubsidiaries]="dataToSubsidiaries"></subsidiaries-list>
+	</ng-template>
+</ng-container>

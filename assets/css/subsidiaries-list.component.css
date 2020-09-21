@@ -1,0 +1,105 @@
+.subsidiaries-list-info, .table-header {
+  display: grid;
+  grid-gap: 26px;
+  grid-template-columns: 60px repeat(auto-fill, minmax(176px, 1fr));
+  grid-template-rows: 50px;
+}
+
+.status-inactive, .status-active {
+  border-radius: 13px;
+  height: 26px;
+  padding: 3px 0;
+  text-align: center;
+  width: 106px;
+}
+
+.container-sub-list {
+  margin: 0 auto;
+  max-width: 1135px;
+  width: 100%;
+}
+
+.screen-container-sub-list {
+  margin: 0 auto;
+  max-width: 1135px;
+  width: 100%;
+}
+
+.subsidiaries-list-container {
+  width: 100%;
+}
+
+.card-container-sub-list {
+  background-color: #FFF;
+  border: 2px solid #F5F6FB;
+  border-radius: 8px;
+  height: 100%;
+  padding: 30px 0 20px;
+  width: 100%;
+}
+
+.table-header {
+  padding-left: 35px;
+  width: 100%;
+}
+
+.table-content {
+  width: 100%;
+}
+
+.subsidiaries-list-info {
+  align-items: center;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  padding-left: 35px;
+  transition: all 290ms ease-in-out;
+  width: 100%;
+}
+.subsidiaries-list-info:hover {
+  background-color: #E3E8EB;
+  border-color: #F5F6FB;
+  box-shadow: 10px 10px 24px -12px rgba(0, 0, 0, 0.35);
+}
+.subsidiaries-list-info:hover .action-button {
+  color: #0D4D64;
+}
+
+.action-button {
+  font-size: 20px;
+  width: 30px;
+}
+
+.status-active {
+  background-color: rgba(0, 186, 210, 0.25);
+  border: 1px solid #00BAD2;
+}
+
+.status-inactive {
+  background-color: rgba(226, 77, 86, 0.25);
+  border: 1px solid #E24D56;
+}
+
+.actions-container {
+  width: 130px;
+}
+
+.quantity {
+  background-color: #E3E8EB;
+  border-radius: 13px;
+  height: 22px;
+  text-align: center;
+  width: 43px;
+}
+
+.sortable-container {
+  display: inline;
+}
+
+.float-left {
+  float: left;
+}
+
+.border-none {
+  border: none;
+  background: none;
+}
