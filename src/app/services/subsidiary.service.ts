@@ -15,11 +15,11 @@ export class SubsidiaryService {
     const params = new HttpParams().set('limit', '10').set('page', '0').set('order', order)
     .set('order_by', orderBy).set('provider_id', providerId.toString());
 
-    return this.http.get<SubsidiaryListResponse>(`http://localhost:8080/o/ProviderCompraDigitalPortlet/api/subsidiary/list`, { params });
+    return this.http.get<SubsidiaryListResponse>(`/o/ProviderCompraDigitalPortlet/api/subsidiary/list`, { params });
   }
 
   toggleSubsidiaries(id: any) {
-    return this.http.put(`http://localhost:8080/o/ProviderCompraDigitalPortlet/api/subsidiary/active/${id}`, {});
+    return this.http.put(`/o/ProviderCompraDigitalPortlet/api/subsidiary/active/${id}`, {});
   }
 
   getSubsidiary(id: string): Observable<SubsidiaryDetail> {

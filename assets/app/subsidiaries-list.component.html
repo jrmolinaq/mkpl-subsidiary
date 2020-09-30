@@ -8,7 +8,7 @@
   <div class="screen-container-sub-list">
     <div class="card-container-sub-list">
       <div class="subsidiaries-list-container">
-        <div class="table-header">
+        <div class="table-header-sub-list">
           <div *ngFor="let header of tableInfo">
             <h5 class="title-small-poppins bold deep-sea-green float-left">
               {{ header.label }}
@@ -23,7 +23,7 @@
             </div>
           </div>
         </div>
-        <div class="table-content column2 no-float">
+        <div class="table-content-sub-list column2 no-float">
           <div class="m-bottom-2 subsidiaries-list-info" *ngFor="let subsidiary of subsidiaries">
             <span class="text-normal bold"
               [ngClass]="subsidiary.status ? 'deep-sea-green' : 'jungle-mist'">{{ subsidiary.id }}</span>

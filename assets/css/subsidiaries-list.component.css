@@ -1,8 +1,8 @@
-.subsidiaries-list-info, .table-header {
+.subsidiaries-list-info, .table-header-sub-list {
   display: grid;
-  grid-gap: 26px;
-  grid-template-columns: 60px repeat(auto-fill, minmax(176px, 1fr));
-  grid-template-rows: 50px;
+  grid-gap: 20px;
+  grid-template-columns: 40px repeat(auto-fill, minmax(120px, 1fr)) !important;
+  grid-template-rows: 40px;
 }
 
 .status-inactive, .status-active {
@@ -38,12 +38,12 @@
   width: 100%;
 }
 
-.table-header {
-  padding-left: 35px;
+.table-header-sub-list {
+  padding-left: 10px;
   width: 100%;
 }
 
-.table-content {
+.table-content-sub-list {
   width: 100%;
 }
 
